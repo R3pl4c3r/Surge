@@ -1,0 +1,8 @@
+#!name=问真八字VIP
+#!desc=问真八字钻石VIP
+
+[MITM]
+hostname= %APPEND% *.iwzbz.com
+
+
+[Script]问真八字=type=http-response,pattern=https:\/\/.+\.iwzbz\.com\/api,requires-body=1,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/refs/heads/main/rewrite/boxJS/source/wzbz.js
