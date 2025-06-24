@@ -2,7 +2,7 @@
 #!desc=彩云天气
 
 [MITM]
-hostname = biz.caiyunapp.com,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,wrapper.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com
+hostname = %APPEND% biz.caiyunapp.com,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,wrapper.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com
 
 [URL Rewrite]
 https:\/\/cdn-w\.caiyunapp\.com\/p\/app\/activity _ reject
@@ -15,9 +15,9 @@ https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home\/conditions\/local _ 
 https:\/\/biz\.cyapi\.cn\/p\/v1\/entries data-type=text data="{}"
 
 [Script]
-type=http-response,pattern=https:\/\/(wrapper|api)\.(cyapi|caiyunapp)\.(cn|com)\/v1\/activity,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
-type=http-response,pattern=https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
-type=http-request,pattern=https:\/\/wrapper\.cyapi\.cn\/v1,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_h.js, requires-body = true
-type=http-response,pattern=https:\/\/starplucker\.cyapi\.cn\/v3,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
-type=http-response,pattern=https:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
-type=http-response,pattern=https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
+彩云天气=type=http-response,pattern=https:\/\/(wrapper|api)\.(cyapi|caiyunapp)\.(cn|com)\/v1\/activity,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
+彩云天气=type=http-response,pattern=https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
+彩云天气=type=http-request,pattern=https:\/\/wrapper\.cyapi\.cn\/v1,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_h.js, requires-body = true
+彩云天气=type=http-response,pattern=https:\/\/starplucker\.cyapi\.cn\/v3,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
+彩云天气=type=http-response,pattern=https:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
+彩云天气=type=http-response,pattern=https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info,script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js, requires-body = true
